@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface mt1804ViewController : UIViewController {
+@interface mt1804ViewController : UIViewController 
+{
 
 }
 
+-(IBAction)onSwitch: (id)sender;
 @end
 
