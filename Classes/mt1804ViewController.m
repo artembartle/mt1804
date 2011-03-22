@@ -10,7 +10,15 @@
 
 @implementation mt1804ViewController
 
-
+-(IBAction)onSwitch: (id)sender
+{
+	UIButton *button;
+	button = (UIButton*)sender;
+	
+	if (button.selected)
+		button.selected = NO;
+	else button.selected = YES;
+}
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
@@ -42,7 +50,7 @@
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return UIInterfaceOrientationIsLandscape(interfaceOrientation);
 }
 
 
