@@ -17,6 +17,8 @@
 		28D7ACF80DDB3853001CB0EB /* mt1804ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* mt1804ViewController.m */; };
 		3C75B39D1338DB93008CEB3F /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C75B39B1338DB93008CEB3F /* off.png */; };
 		3C75B39E1338DB93008CEB3F /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C75B39C1338DB93008CEB3F /* on.png */; };
+		3CFFE34D1339FD7100AD09AA /* Register.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE34C1339FD7100AD09AA /* Register.mm */; };
+		3CFFE35A133A057C00AD09AA /* Tetrad.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE359133A057C00AD09AA /* Tetrad.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,10 @@
 		32CA4F630368D1EE00C91783 /* mt1804_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mt1804_Prefix.pch; sourceTree = "<group>"; };
 		3C75B39B1338DB93008CEB3F /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
 		3C75B39C1338DB93008CEB3F /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
+		3CFFE34B1339FD7100AD09AA /* Register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Register.h; sourceTree = "<group>"; };
+		3CFFE34C1339FD7100AD09AA /* Register.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Register.mm; sourceTree = "<group>"; };
+		3CFFE358133A057C00AD09AA /* Tetrad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tetrad.h; sourceTree = "<group>"; };
+		3CFFE359133A057C00AD09AA /* Tetrad.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Tetrad.mm; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* mt1804-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "mt1804-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +64,10 @@
 				1D3623250D0F684500981E51 /* mt1804AppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* mt1804ViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* mt1804ViewController.m */,
+				3CFFE34B1339FD7100AD09AA /* Register.h */,
+				3CFFE34C1339FD7100AD09AA /* Register.mm */,
+				3CFFE358133A057C00AD09AA /* Tetrad.h */,
+				3CFFE359133A057C00AD09AA /* Tetrad.mm */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -187,6 +197,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* mt1804AppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* mt1804ViewController.m in Sources */,
+				3CFFE34D1339FD7100AD09AA /* Register.mm in Sources */,
+				3CFFE35A133A057C00AD09AA /* Tetrad.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
