@@ -10,16 +10,59 @@
 
 @implementation mt1804ViewController
 
--(IBAction)onSwitch: (id)sender
+#pragma mark -
+#pragma mark IB methods
+-(void)changeBtnState:(UIButton*)button;
 {
-	UIButton *button;
-	button = (UIButton*)sender;
-	
 	if (button.selected)
 		button.selected = NO;
 	else button.selected = YES;
 }
 
+-(IBAction)muxChanged: (id)sender
+{
+	UIButton *muxBtn;
+	muxBtn = sender;
+	[self changeBtnState:muxBtn];
+	mux.setBool(muxBtn.tag, muxBtn.selected);
+	[self changeMemoryState:microCommand.getFromRegister(mux.getNumber())];
+}
+
+-(IBAction)dataChanged: (id)sender
+{
+	UIButton *dataBtn;
+	dataBtn = sender;
+	[self changeBtnState:dataBtn];
+	data.setBool(dataBtn.tag, dataBtn.selected);
+}
+
+-(IBAction)addressChanged: (id)sender
+{
+	UIButton *addressBtn;
+	addressBtn = sender;
+	[self changeBtnState:addressBtn];
+	address.setBool(addressBtn.tag, addressBtn.selected);
+}
+
+-(IBAction)load
+{
+	microCommand.loadToRegister(mux.getNumber(), data.getNumber());
+	[self changeMemoryState:microCommand.getFromRegister(mux.getNumber())];
+}
+
+-(void)changeMemoryState:(int)number
+{
+	VD1.highlighted = number % 2;
+	number /= 2;
+	VD2.highlighted = number % 2;
+	number /= 2;
+	VD3.highlighted = number % 2;
+	number /= 2;
+	VD4.highlighted = number % 2;
+	number /= 2;	
+}
+
+#pragma mark -
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
