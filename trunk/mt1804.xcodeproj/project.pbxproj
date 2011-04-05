@@ -7,39 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3623260D0F684500981E51 /* mt1804AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* mt1804AppDelegate.m */; };
+		1D3623260D0F684500981E51 /* mt1804AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* mt1804AppDelegate.mm */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		2899E5220DE3E06400AC0155 /* mt1804ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* mt1804ViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		28D7ACF80DDB3853001CB0EB /* mt1804ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* mt1804ViewController.m */; };
+		28D7ACF80DDB3853001CB0EB /* mt1804ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* mt1804ViewController.mm */; };
 		3C75B39D1338DB93008CEB3F /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C75B39B1338DB93008CEB3F /* off.png */; };
 		3C75B39E1338DB93008CEB3F /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C75B39C1338DB93008CEB3F /* on.png */; };
-		3CFFE34D1339FD7100AD09AA /* Register.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE34C1339FD7100AD09AA /* Register.mm */; };
-		3CFFE35A133A057C00AD09AA /* Tetrad.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE359133A057C00AD09AA /* Tetrad.mm */; };
+		3CFADD1F134B2ABF00ED3B51 /* Multiplexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CFADD1E134B2ABF00ED3B51 /* Multiplexer.cpp */; };
+		3CFFE34D1339FD7100AD09AA /* Register.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE34C1339FD7100AD09AA /* Register.cpp */; };
+		3CFFE35A133A057C00AD09AA /* Tetrad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE359133A057C00AD09AA /* Tetrad.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* mt1804AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mt1804AppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* mt1804AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mt1804AppDelegate.m; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* mt1804AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = mt1804AppDelegate.mm; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* mt1804.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mt1804.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E5210DE3E06400AC0155 /* mt1804ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = mt1804ViewController.xib; sourceTree = "<group>"; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		28D7ACF60DDB3853001CB0EB /* mt1804ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mt1804ViewController.h; sourceTree = "<group>"; };
-		28D7ACF70DDB3853001CB0EB /* mt1804ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mt1804ViewController.m; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* mt1804ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = mt1804ViewController.mm; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* mt1804_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mt1804_Prefix.pch; sourceTree = "<group>"; };
 		3C75B39B1338DB93008CEB3F /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
 		3C75B39C1338DB93008CEB3F /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
+		3CFADD1D134B2ABF00ED3B51 /* Multiplexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Multiplexer.h; sourceTree = "<group>"; };
+		3CFADD1E134B2ABF00ED3B51 /* Multiplexer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Multiplexer.cpp; sourceTree = "<group>"; };
 		3CFFE34B1339FD7100AD09AA /* Register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Register.h; sourceTree = "<group>"; };
-		3CFFE34C1339FD7100AD09AA /* Register.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Register.mm; sourceTree = "<group>"; };
+		3CFFE34C1339FD7100AD09AA /* Register.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Register.cpp; sourceTree = "<group>"; };
 		3CFFE358133A057C00AD09AA /* Tetrad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tetrad.h; sourceTree = "<group>"; };
-		3CFFE359133A057C00AD09AA /* Tetrad.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Tetrad.mm; sourceTree = "<group>"; };
+		3CFFE359133A057C00AD09AA /* Tetrad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tetrad.cpp; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* mt1804-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "mt1804-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,13 +64,15 @@
 			isa = PBXGroup;
 			children = (
 				1D3623240D0F684500981E51 /* mt1804AppDelegate.h */,
-				1D3623250D0F684500981E51 /* mt1804AppDelegate.m */,
+				1D3623250D0F684500981E51 /* mt1804AppDelegate.mm */,
 				28D7ACF60DDB3853001CB0EB /* mt1804ViewController.h */,
-				28D7ACF70DDB3853001CB0EB /* mt1804ViewController.m */,
+				28D7ACF70DDB3853001CB0EB /* mt1804ViewController.mm */,
 				3CFFE34B1339FD7100AD09AA /* Register.h */,
-				3CFFE34C1339FD7100AD09AA /* Register.mm */,
+				3CFFE34C1339FD7100AD09AA /* Register.cpp */,
 				3CFFE358133A057C00AD09AA /* Tetrad.h */,
-				3CFFE359133A057C00AD09AA /* Tetrad.mm */,
+				3CFFE359133A057C00AD09AA /* Tetrad.cpp */,
+				3CFADD1D134B2ABF00ED3B51 /* Multiplexer.h */,
+				3CFADD1E134B2ABF00ED3B51 /* Multiplexer.cpp */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -195,10 +200,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				1D3623260D0F684500981E51 /* mt1804AppDelegate.m in Sources */,
-				28D7ACF80DDB3853001CB0EB /* mt1804ViewController.m in Sources */,
-				3CFFE34D1339FD7100AD09AA /* Register.mm in Sources */,
-				3CFFE35A133A057C00AD09AA /* Tetrad.mm in Sources */,
+				1D3623260D0F684500981E51 /* mt1804AppDelegate.mm in Sources */,
+				28D7ACF80DDB3853001CB0EB /* mt1804ViewController.mm in Sources */,
+				3CFFE34D1339FD7100AD09AA /* Register.cpp in Sources */,
+				3CFFE35A133A057C00AD09AA /* Tetrad.cpp in Sources */,
+				3CFADD1F134B2ABF00ED3B51 /* Multiplexer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +221,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = mt1804_Prefix.pch;
 				INFOPLIST_FILE = "mt1804-Info.plist";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = mt1804;
 			};
 			name = Debug;

@@ -7,12 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
+#include "Register.h"
+#include "Multiplexer.h"
 
 @interface mt1804ViewController : UIViewController 
 {
-
+	Register microCommand;
+	Multiplexer mux;
+	Tetrad data;
+	Tetrad address;
+	
+	IBOutlet UIImageView *VD1;
+	IBOutlet UIImageView *VD2;
+	IBOutlet UIImageView *VD3;
+	IBOutlet UIImageView *VD4;
 }
 
--(IBAction)onSwitch: (id)sender;
+-(void)changeBtnState:(UIButton*)button;
+-(IBAction)muxChanged: (id)sender;
+-(IBAction)dataChanged: (id)sender;
+-(IBAction)addressChanged: (id)sender;
+-(IBAction)load;
+-(void)changeMemoryState:(int)number;
 @end
 
