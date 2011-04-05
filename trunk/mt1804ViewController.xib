@@ -558,7 +558,23 @@
 					<object class="IBUILabel" id="167433283">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{372, 41}, {62, 21}}</string>
+						<string key="NSFrame">{{344, 41}, {117, 21}}</string>
+						<reference key="NSSuperview" ref="774585933"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<bool key="IBUIClipsSubviews">YES</bool>
+						<int key="IBUIContentMode">7</int>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<string key="IBUIText">Microcommand</string>
+						<reference key="IBUITextColor" ref="255234645"/>
+						<reference key="IBUIHighlightedColor" ref="520568438"/>
+						<int key="IBUIBaselineAdjustment">1</int>
+						<float key="IBUIMinimumFontSize">10</float>
+					</object>
+					<object class="IBUILabel" id="533795298">
+						<reference key="NSNextResponder" ref="774585933"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{211, 41}, {69, 21}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -764,6 +780,38 @@
 					</object>
 					<int key="connectionID">94</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">VD5</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="208462181"/>
+					</object>
+					<int key="connectionID">95</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">VD6</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="1056382609"/>
+					</object>
+					<int key="connectionID">96</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">VD7</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="209858171"/>
+					</object>
+					<int key="connectionID">97</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">VD8</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="928703542"/>
+					</object>
+					<int key="connectionID">98</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -819,9 +867,10 @@
 							<reference ref="1056382609"/>
 							<reference ref="208462181"/>
 							<reference ref="408367675"/>
-							<reference ref="167433283"/>
 							<reference ref="654900439"/>
 							<reference ref="405980125"/>
+							<reference ref="167433283"/>
+							<reference ref="533795298"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -985,6 +1034,11 @@
 						<reference key="object" ref="405980125"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">99</int>
+						<reference key="object" ref="533795298"/>
+						<reference key="parent" ref="774585933"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -1059,6 +1113,8 @@
 					<string>88.IBViewBoundsToFrameTransform</string>
 					<string>93.IBPluginDependency</string>
 					<string>93.IBViewBoundsToFrameTransform</string>
+					<string>99.IBPluginDependency</string>
+					<string>99.IBViewBoundsToFrameTransform</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1136,7 +1192,7 @@
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">P4AAAL+AAABDLwAAwsoAAA</bytes>
 					</object>
-					<string>{{373, 166}, {480, 320}}</string>
+					<string>{{365, 82}, {480, 320}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
@@ -1188,11 +1244,15 @@
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABDvgAAwnAAAA</bytes>
+						<bytes key="NSTransformStruct">AUOsAABCJAAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">P4AAAL+AAABDvAAAwyAAAA</bytes>
+					</object>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAABDQAAAwnAAAA</bytes>
 					</object>
 				</object>
 			</object>
@@ -1212,7 +1272,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">94</int>
+			<int key="maxID">99</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1281,9 +1341,17 @@
 							<string>VD2</string>
 							<string>VD3</string>
 							<string>VD4</string>
+							<string>VD5</string>
+							<string>VD6</string>
+							<string>VD7</string>
+							<string>VD8</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>UIImageView</string>
+							<string>UIImageView</string>
+							<string>UIImageView</string>
+							<string>UIImageView</string>
 							<string>UIImageView</string>
 							<string>UIImageView</string>
 							<string>UIImageView</string>
@@ -1298,6 +1366,10 @@
 							<string>VD2</string>
 							<string>VD3</string>
 							<string>VD4</string>
+							<string>VD5</string>
+							<string>VD6</string>
+							<string>VD7</string>
+							<string>VD8</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1315,6 +1387,22 @@
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">VD4</string>
+								<string key="candidateClassName">UIImageView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">VD5</string>
+								<string key="candidateClassName">UIImageView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">VD6</string>
+								<string key="candidateClassName">UIImageView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">VD7</string>
+								<string key="candidateClassName">UIImageView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">VD8</string>
 								<string key="candidateClassName">UIImageView</string>
 							</object>
 						</object>

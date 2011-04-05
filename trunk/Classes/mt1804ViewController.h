@@ -21,6 +21,11 @@
 	IBOutlet UIImageView *VD2;
 	IBOutlet UIImageView *VD3;
 	IBOutlet UIImageView *VD4;
+	
+	IBOutlet UIImageView *VD5;
+	IBOutlet UIImageView *VD6;
+	IBOutlet UIImageView *VD7;
+	IBOutlet UIImageView *VD8;
 }
 
 -(void)changeBtnState:(UIButton*)button;
@@ -30,5 +35,6 @@
 -(IBAction)load;
 -(IBAction)viewMemoryState;
 -(void)changeMemoryState:(int)number;
+-(void)changeMicroCommandState:(int)number;
 @end
 
