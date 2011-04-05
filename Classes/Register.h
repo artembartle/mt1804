@@ -6,8 +6,8 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 #include "Tetrad.h"
-
-//class Tetrad;
+#ifndef REGISTER_H
+#define REGISTER_H
 
 class Register
 {
@@ -16,4 +16,8 @@ class Register
 public:
 	Register();
 	~Register();
-}
+	void loadToRegister(int tetradNum, int number);
+	int getFromRegister(int tetradNum);
+};
+
+#endif
