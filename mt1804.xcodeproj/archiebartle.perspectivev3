@@ -277,7 +277,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
+									<integer>7</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -318,7 +318,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>3C960C7A1336671D0033939F</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>mt1804ViewController.mm</string>
+								<string>MemoryState.mm</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,28 +326,30 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>3C960C7B1336671D0033939F</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>mt1804ViewController.mm</string>
+										<string>MemoryState.mm</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>3C327B0D134B49DF0024AE77</string>
+										<string>3C327B78134B532F0024AE77</string>
 										<key>history</key>
 										<array>
 											<string>3CFADD11134B29F200ED3B51</string>
 											<string>3CFADD34134B2EEC00ED3B51</string>
 											<string>3C327A42134B35460024AE77</string>
 											<string>3C327ABF134B3ED80024AE77</string>
-											<string>3C327AEF134B41C60024AE77</string>
 											<string>3C327AF3134B42BA0024AE77</string>
 											<string>3C327AF8134B42BA0024AE77</string>
 											<string>3C327AF9134B42BA0024AE77</string>
 											<string>3C327B05134B45460024AE77</string>
-											<string>3C327B06134B45460024AE77</string>
-											<string>3C327B07134B45460024AE77</string>
-											<string>3C327B08134B45460024AE77</string>
-											<string>3C327B09134B45460024AE77</string>
-											<string>3C327B0A134B45460024AE77</string>
-											<string>3C327B0B134B45460024AE77</string>
+											<string>3C327B29134B52000024AE77</string>
+											<string>3C327B2A134B52000024AE77</string>
+											<string>3C327B2B134B52000024AE77</string>
+											<string>3C327B2C134B52000024AE77</string>
+											<string>3C327B2D134B52000024AE77</string>
+											<string>3C327B30134B52000024AE77</string>
+											<string>3C327B37134B52360024AE77</string>
+											<string>3C327B6C134B52D00024AE77</string>
+											<string>3C327B6D134B52D00024AE77</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

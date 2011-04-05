@@ -571,6 +571,25 @@
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 					</object>
+					<object class="IBUIButton" id="405980125">
+						<reference key="NSNextResponder" ref="774585933"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{341, 124}, {123, 37}}</string>
+						<reference key="NSSuperview" ref="774585933"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<int key="IBUIContentHorizontalAlignment">0</int>
+						<int key="IBUIContentVerticalAlignment">0</int>
+						<reference key="IBUIFont" ref="641792152"/>
+						<int key="IBUIButtonType">1</int>
+						<string key="IBUINormalTitle">Memory State</string>
+						<reference key="IBUIHighlightedTitleColor" ref="520568438"/>
+						<object class="NSColor" key="IBUINormalTitleColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
+						</object>
+						<reference key="IBUINormalTitleShadowColor" ref="454980540"/>
+					</object>
 				</object>
 				<string key="NSFrameSize">{480, 320}</string>
 				<reference key="NSSuperview"/>
@@ -736,6 +755,15 @@
 					</object>
 					<int key="connectionID">92</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">viewMemoryState</string>
+						<reference key="source" ref="405980125"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">94</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -781,7 +809,6 @@
 							<reference ref="158030048"/>
 							<reference ref="991605368"/>
 							<reference ref="240723911"/>
-							<reference ref="654900439"/>
 							<reference ref="907708461"/>
 							<reference ref="336640639"/>
 							<reference ref="58031398"/>
@@ -793,6 +820,8 @@
 							<reference ref="208462181"/>
 							<reference ref="408367675"/>
 							<reference ref="167433283"/>
+							<reference ref="654900439"/>
+							<reference ref="405980125"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -951,6 +980,11 @@
 						<reference key="object" ref="167433283"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">93</int>
+						<reference key="object" ref="405980125"/>
+						<reference key="parent" ref="774585933"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -1023,6 +1057,8 @@
 					<string>75.IBViewBoundsToFrameTransform</string>
 					<string>88.IBPluginDependency</string>
 					<string>88.IBViewBoundsToFrameTransform</string>
+					<string>93.IBPluginDependency</string>
+					<string>93.IBViewBoundsToFrameTransform</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1144,7 +1180,7 @@
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABDyoAAwpYAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABDyoAAwhQAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
@@ -1153,6 +1189,10 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">P4AAAL+AAABDvgAAwnAAAA</bytes>
+					</object>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAABDvAAAwyAAAA</bytes>
 					</object>
 				</object>
 			</object>
@@ -1172,7 +1212,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">92</int>
+			<int key="maxID">94</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1188,9 +1228,11 @@
 							<string>dataChanged:</string>
 							<string>load</string>
 							<string>muxChanged:</string>
+							<string>viewMemoryState</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -1205,6 +1247,7 @@
 							<string>dataChanged:</string>
 							<string>load</string>
 							<string>muxChanged:</string>
+							<string>viewMemoryState</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1222,6 +1265,10 @@
 							</object>
 							<object class="IBActionInfo">
 								<string key="name">muxChanged:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">viewMemoryState</string>
 								<string key="candidateClassName">id</string>
 							</object>
 						</object>

@@ -7,11 +7,13 @@
 //
 
 #import "mt1804ViewController.h"
+#import "MemoryState.h"
 
 @implementation mt1804ViewController
 
 #pragma mark -
 #pragma mark IB methods
+
 -(void)changeBtnState:(UIButton*)button;
 {
 	if (button.selected)
@@ -60,6 +62,13 @@
 	number /= 2;
 	VD4.highlighted = number % 2;
 	number /= 2;	
+}
+
+-(IBAction)viewMemoryState
+{
+	MemoryState *memState = [[MemoryState alloc] init];
+	memState.microComand = &microCommand;
+	[self presentModalViewController:memState animated:YES];
 }
 
 #pragma mark -

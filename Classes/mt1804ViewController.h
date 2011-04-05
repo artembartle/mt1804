@@ -28,6 +28,7 @@
 -(IBAction)dataChanged: (id)sender;
 -(IBAction)addressChanged: (id)sender;
 -(IBAction)load;
+-(IBAction)viewMemoryState;
 -(void)changeMemoryState:(int)number;
 @end
 
