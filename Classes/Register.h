@@ -16,8 +16,9 @@ class Register
 public:
 	Register();
 	~Register();
+	Register(const Register& reg);
 	void loadToRegister(int tetradNum, int number);
-	int getFromRegister(int tetradNum);
+	int getFromTetrad(int tetradNum);
 };
 
 #endif

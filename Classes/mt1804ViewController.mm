@@ -8,6 +8,7 @@
 
 #import "mt1804ViewController.h"
 #import "MemoryState.h"
+#include "MicrocommandsMemory.h"
 
 @implementation mt1804ViewController
 
@@ -27,7 +28,7 @@
 	muxBtn = sender;
 	[self changeBtnState:muxBtn];
 	mux.setBool(muxBtn.tag, muxBtn.selected);
-	[self changeMemoryState:microCommand.getFromRegister(mux.getNumber())];
+	[self changeMemoryState:pmk.getDataFromTetradAtRegister(address.getNumber(), mux.getNumber())];
 }
 
 -(IBAction)dataChanged: (id)sender
@@ -36,6 +37,7 @@
 	dataBtn = sender;
 	[self changeBtnState:dataBtn];
 	data.setBool(dataBtn.tag, dataBtn.selected);
+	[self changeMicroCommandState:data.getNumber()];
 }
 
 -(IBAction)addressChanged: (id)sender
@@ -44,15 +46,29 @@
 	addressBtn = sender;
 	[self changeBtnState:addressBtn];
 	address.setBool(addressBtn.tag, addressBtn.selected);
+	[self changeMemoryState:pmk.getDataFromTetradAtRegister(address.getNumber(), mux.getNumber())];
 }
 
 -(IBAction)load
 {
 	microCommand.loadToRegister(mux.getNumber(), data.getNumber());
-	[self changeMemoryState:microCommand.getFromRegister(mux.getNumber())];
+	pmk.loadMicroCommandToAddress(microCommand, address.getNumber());
+	[self changeMemoryState:pmk.getDataFromTetradAtRegister(address.getNumber(), mux.getNumber())];
 }
 
 -(void)changeMemoryState:(int)number
+{
+	VD5.highlighted = number % 2;
+	number /= 2;
+	VD6.highlighted = number % 2;
+	number /= 2;
+	VD7.highlighted = number % 2;
+	number /= 2;
+	VD8.highlighted = number % 2;
+	number /= 2;
+}
+
+-(void)changeMicroCommandState:(int)number
 {
 	VD1.highlighted = number % 2;
 	number /= 2;
@@ -67,8 +83,8 @@
 -(IBAction)viewMemoryState
 {
 	MemoryState *memState = [[MemoryState alloc] init];
-	memState.microComand = &microCommand;
 	[self presentModalViewController:memState animated:YES];
+	[memState release];
 }
 
 #pragma mark -

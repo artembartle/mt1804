@@ -277,7 +277,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>7</integer>
+									<integer>5</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -318,7 +318,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>3C960C7A1336671D0033939F</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MemoryState.mm</string>
+								<string>mt1804ViewController.mm</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,30 +326,38 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>3C960C7B1336671D0033939F</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MemoryState.mm</string>
+										<string>mt1804ViewController.mm</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>3C327B78134B532F0024AE77</string>
+										<string>3C327D4E134B81EB0024AE77</string>
 										<key>history</key>
 										<array>
 											<string>3CFADD11134B29F200ED3B51</string>
-											<string>3CFADD34134B2EEC00ED3B51</string>
-											<string>3C327A42134B35460024AE77</string>
 											<string>3C327ABF134B3ED80024AE77</string>
 											<string>3C327AF3134B42BA0024AE77</string>
 											<string>3C327AF8134B42BA0024AE77</string>
 											<string>3C327AF9134B42BA0024AE77</string>
-											<string>3C327B05134B45460024AE77</string>
-											<string>3C327B29134B52000024AE77</string>
-											<string>3C327B2A134B52000024AE77</string>
-											<string>3C327B2B134B52000024AE77</string>
-											<string>3C327B2C134B52000024AE77</string>
-											<string>3C327B2D134B52000024AE77</string>
-											<string>3C327B30134B52000024AE77</string>
-											<string>3C327B37134B52360024AE77</string>
-											<string>3C327B6C134B52D00024AE77</string>
-											<string>3C327B6D134B52D00024AE77</string>
+											<string>3C327BB3134B58E10024AE77</string>
+											<string>3C327C63134B6F7D0024AE77</string>
+											<string>3C327C64134B6F7D0024AE77</string>
+											<string>3C327C68134B6F7D0024AE77</string>
+											<string>3C327CA8134B71160024AE77</string>
+											<string>3C327CAA134B71160024AE77</string>
+											<string>3C327CAB134B71160024AE77</string>
+											<string>3C327CAD134B71160024AE77</string>
+											<string>3C327CB0134B71160024AE77</string>
+											<string>3C327CF5134B74A90024AE77</string>
+											<string>3C327CF8134B74A90024AE77</string>
+											<string>3C327D00134B7BAF0024AE77</string>
+											<string>3C327D03134B7BAF0024AE77</string>
+											<string>3C327D06134B7BAF0024AE77</string>
+											<string>3C327D40134B7ECF0024AE77</string>
+											<string>3C327D41134B7ECF0024AE77</string>
+											<string>3C327D42134B7ECF0024AE77</string>
+											<string>3C327D43134B7ECF0024AE77</string>
+											<string>3C327D4C134B81EB0024AE77</string>
+											<string>3C327D4D134B81EB0024AE77</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -388,7 +396,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {980, 188}}</string>
+										<string>{{10, 27}, {980, 194}}</string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -404,7 +412,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 31}, {603, 297}}</string>
+										<string>{{10, 27}, {980, -27}}</string>
+										<key>RubberWindowFrame</key>
+										<string>0 35 1230 743 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXProjectFindModule</string>
@@ -442,9 +452,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {980, -27}}</string>
-										<key>RubberWindowFrame</key>
-										<string>0 35 1230 743 0 0 1280 778 </string>
+										<string>{{10, 27}, {980, 60}}</string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -472,11 +480,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>3C327A0D134B2F5D0024AE77</string>
+				<string>3C327CB3134B71160024AE77</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>3C327A0E134B2F5D0024AE77</string>
+				<string>3C327CB4134B71160024AE77</string>
 				<string>3C960C7A1336671D0033939F</string>
-				<string>3C327A0F134B2F5D0024AE77</string>
+				<string>3C327CB5134B71160024AE77</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -626,14 +634,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>3C327A10134B2F5D0024AE77</string>
+				<string>3C327D11134B7C490024AE77</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>3C327A11134B2F5D0024AE77</string>
-				<string>3C327A12134B2F5D0024AE77</string>
-				<string>3C327A13134B2F5D0024AE77</string>
-				<string>3C327A14134B2F5D0024AE77</string>
-				<string>3C327A15134B2F5D0024AE77</string>
+				<string>3C327D12134B7C490024AE77</string>
+				<string>3C327D13134B7C490024AE77</string>
+				<string>3C327D14134B7C490024AE77</string>
+				<string>3C327D15134B7C490024AE77</string>
+				<string>3C327D16134B7C490024AE77</string>
 			</array>
 			<key>ToolbarConfigUserDefaultsMinorVersion</key>
 			<string>2</string>
@@ -667,8 +675,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>3C327A1B134B2F8E0024AE77</string>
-		<string>3C327A17134B2F5D0024AE77</string>
+		<string>3C327D4F134B81EB0024AE77</string>
+		<string>3C327D23134B7CA20024AE77</string>
+		<string>3C327D18134B7C490024AE77</string>
 		<string>/Users/archiebartle/Documents/projects/mt1804/mt1804.xcodeproj</string>
 	</array>
 	<key>WindowString</key>

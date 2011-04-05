@@ -10,10 +10,19 @@
 
 Register::Register() 
 {
+	
 }
 
 Register::~Register()
 {
+}
+
+Register::Register(const Register& reg)
+{
+	for (int i = 0; i < 8; i++)
+		(*this).content[i] = reg.content[i];
+	
+	(*this).currentTetrad = reg.currentTetrad;
 }
 
 void Register::loadToRegister(int tetradNum, int number)
@@ -27,7 +36,7 @@ void Register::loadToRegister(int tetradNum, int number)
 	content[tetradNum] = currentTetrad;
 }
 
-int Register::getFromRegister(int tetradNum)
+int Register::getFromTetrad(int tetradNum)
 {
 	return content[tetradNum].getNumber();
 }

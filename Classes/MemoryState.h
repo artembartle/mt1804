@@ -12,21 +12,10 @@
 
 @interface MemoryState : UIViewController 
 {
-	IBOutlet UILabel *tetr0;
-	IBOutlet UILabel *tetr1;
-	IBOutlet UILabel *tetr2;
-	IBOutlet UILabel *tetr3;
-	IBOutlet UILabel *tetr4;
-	IBOutlet UILabel *tetr5;
-	IBOutlet UILabel *tetr6;
-	IBOutlet UILabel *tetr7;
-	
-	Register *microComand;
+	IBOutlet UIScrollView *scrollView;
 }
 
-@property(nonatomic) Register *microComand;
-
--(NSString*)labelForTetrade:(int)numTetrade;
+-(NSString*)labelForTetrade:(int)numTetrade atRegister:(int)numRegister;
 -(IBAction)onBack;
 
 @end

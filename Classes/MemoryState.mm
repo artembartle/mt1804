@@ -7,14 +7,14 @@
 //
 
 #import "MemoryState.h"
+#include "MicrocommandsMemory.h"
 
 
 @implementation MemoryState
-@synthesize microComand;
 
--(NSString*)labelForTetrade:(int)numTetrade
+-(NSString*)labelForTetrade:(int)numTetrade atRegister:(int)numRegister
 {
-	int n = (*microComand).getFromRegister(numTetrade);
+	int n = pmk.getDataFromTetradAtRegister(numRegister, numTetrade);
 	return [NSString stringWithFormat:@"%d%d%d%d", (n/8)%2, (n/4)%2, (n/2)%2, n%2];
 }
 
@@ -26,14 +26,20 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	tetr0.text = [self labelForTetrade:0];
-	tetr1.text = [self labelForTetrade:1];
-	tetr2.text = [self labelForTetrade:2];
-	tetr3.text = [self labelForTetrade:3];
-	tetr4.text = [self labelForTetrade:4];
-	tetr5.text = [self labelForTetrade:5];
-	tetr6.text = [self labelForTetrade:6];
-	tetr7.text = [self labelForTetrade:7];
+	
+	for (int i = 0; i < 16; i++) 
+	{
+		for (int j = 0; j < 8; j++) 
+		{
+			UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(43+j*50, 58+i*20, 42, 21)];
+			label.font = [UIFont fontWithName:@"Helvetica" size:17];
+			label.textColor = [UIColor blackColor];
+			label.text = [self labelForTetrade:j atRegister:i];
+			[scrollView addSubview:label];
+			[label release];
+		}
+	}
+	[scrollView setContentSize:CGSizeMake(480, 400)];
 }
 
 
