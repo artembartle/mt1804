@@ -15,6 +15,8 @@
 		2899E5220DE3E06400AC0155 /* mt1804ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* mt1804ViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* mt1804ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* mt1804ViewController.mm */; };
+		3C327B12134B4BF70024AE77 /* MemoryState.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C327B10134B4BF70024AE77 /* MemoryState.mm */; };
+		3C327B13134B4BF70024AE77 /* MemoryState.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C327B11134B4BF70024AE77 /* MemoryState.xib */; };
 		3C75B39D1338DB93008CEB3F /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C75B39B1338DB93008CEB3F /* off.png */; };
 		3C75B39E1338DB93008CEB3F /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C75B39C1338DB93008CEB3F /* on.png */; };
 		3CFADD1F134B2ABF00ED3B51 /* Multiplexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CFADD1E134B2ABF00ED3B51 /* Multiplexer.cpp */; };
@@ -35,6 +37,9 @@
 		28D7ACF70DDB3853001CB0EB /* mt1804ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = mt1804ViewController.mm; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* mt1804_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mt1804_Prefix.pch; sourceTree = "<group>"; };
+		3C327B0F134B4BF70024AE77 /* MemoryState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryState.h; sourceTree = "<group>"; };
+		3C327B10134B4BF70024AE77 /* MemoryState.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MemoryState.mm; sourceTree = "<group>"; };
+		3C327B11134B4BF70024AE77 /* MemoryState.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MemoryState.xib; path = Classes/MemoryState.xib; sourceTree = "<group>"; };
 		3C75B39B1338DB93008CEB3F /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
 		3C75B39C1338DB93008CEB3F /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
 		3CFADD1D134B2ABF00ED3B51 /* Multiplexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Multiplexer.h; sourceTree = "<group>"; };
@@ -67,6 +72,8 @@
 				1D3623250D0F684500981E51 /* mt1804AppDelegate.mm */,
 				28D7ACF60DDB3853001CB0EB /* mt1804ViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* mt1804ViewController.mm */,
+				3C327B0F134B4BF70024AE77 /* MemoryState.h */,
+				3C327B10134B4BF70024AE77 /* MemoryState.mm */,
 				3CFFE34B1339FD7100AD09AA /* Register.h */,
 				3CFFE34C1339FD7100AD09AA /* Register.cpp */,
 				3CFFE358133A057C00AD09AA /* Tetrad.h */,
@@ -112,6 +119,7 @@
 				3C75B3991338DB80008CEB3F /* images */,
 				2899E5210DE3E06400AC0155 /* mt1804ViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				3C327B11134B4BF70024AE77 /* MemoryState.xib */,
 				8D1107310486CEB800E47090 /* mt1804-Info.plist */,
 			);
 			name = Resources;
@@ -189,6 +197,7 @@
 				2899E5220DE3E06400AC0155 /* mt1804ViewController.xib in Resources */,
 				3C75B39D1338DB93008CEB3F /* off.png in Resources */,
 				3C75B39E1338DB93008CEB3F /* on.png in Resources */,
+				3C327B13134B4BF70024AE77 /* MemoryState.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +214,7 @@
 				3CFFE34D1339FD7100AD09AA /* Register.cpp in Sources */,
 				3CFFE35A133A057C00AD09AA /* Tetrad.cpp in Sources */,
 				3CFADD1F134B2ABF00ED3B51 /* Multiplexer.cpp in Sources */,
+				3C327B12134B4BF70024AE77 /* MemoryState.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
