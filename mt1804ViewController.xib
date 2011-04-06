@@ -606,6 +606,25 @@
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="454980540"/>
 					</object>
+					<object class="IBUIButton" id="319947843">
+						<reference key="NSNextResponder" ref="774585933"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{20, 124}, {123, 37}}</string>
+						<reference key="NSSuperview" ref="774585933"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+						<int key="IBUIContentHorizontalAlignment">0</int>
+						<int key="IBUIContentVerticalAlignment">0</int>
+						<reference key="IBUIFont" ref="641792152"/>
+						<int key="IBUIButtonType">1</int>
+						<string key="IBUINormalTitle">Save / Load</string>
+						<reference key="IBUIHighlightedTitleColor" ref="520568438"/>
+						<object class="NSColor" key="IBUINormalTitleColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
+						</object>
+						<reference key="IBUINormalTitleShadowColor" ref="454980540"/>
+					</object>
 				</object>
 				<string key="NSFrameSize">{480, 320}</string>
 				<reference key="NSSuperview"/>
@@ -812,6 +831,24 @@
 					</object>
 					<int key="connectionID">98</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">viewMemoryState</string>
+						<reference key="source" ref="319947843"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">101</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">viewLoadSave</string>
+						<reference key="source" ref="319947843"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">102</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -871,6 +908,7 @@
 							<reference ref="405980125"/>
 							<reference ref="167433283"/>
 							<reference ref="533795298"/>
+							<reference ref="319947843"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -1039,6 +1077,11 @@
 						<reference key="object" ref="533795298"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">100</int>
+						<reference key="object" ref="319947843"/>
+						<reference key="parent" ref="774585933"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -1047,6 +1090,8 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>-1.CustomClassName</string>
 					<string>-2.CustomClassName</string>
+					<string>100.IBPluginDependency</string>
+					<string>100.IBViewBoundsToFrameTransform</string>
 					<string>24.IBPluginDependency</string>
 					<string>24.IBViewBoundsToFrameTransform</string>
 					<string>25.IBPluginDependency</string>
@@ -1120,6 +1165,10 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>mt1804ViewController</string>
 					<string>UIResponder</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAABDrQAAwyQAAA</bytes>
+					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">AUPbgABDcwAAA</bytes>
@@ -1248,7 +1297,7 @@
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABDvAAAwyAAAA</bytes>
+						<bytes key="NSTransformStruct">AUOqgABC+AAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
@@ -1272,7 +1321,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">99</int>
+			<int key="maxID">102</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1288,10 +1337,12 @@
 							<string>dataChanged:</string>
 							<string>load</string>
 							<string>muxChanged:</string>
+							<string>viewLoadSave</string>
 							<string>viewMemoryState</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -1307,6 +1358,7 @@
 							<string>dataChanged:</string>
 							<string>load</string>
 							<string>muxChanged:</string>
+							<string>viewLoadSave</string>
 							<string>viewMemoryState</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
@@ -1325,6 +1377,10 @@
 							</object>
 							<object class="IBActionInfo">
 								<string key="name">muxChanged:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">viewLoadSave</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">

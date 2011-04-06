@@ -34,6 +34,7 @@
 -(IBAction)addressChanged: (id)sender;
 -(IBAction)load;
 -(IBAction)viewMemoryState;
+-(IBAction)viewLoadSave;
 -(void)changeMemoryState:(int)number;
 -(void)changeMicroCommandState:(int)number;
 @end
