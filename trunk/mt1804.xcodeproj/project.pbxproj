@@ -20,6 +20,8 @@
 		3C327BEA134B656E0024AE77 /* MicrocommandsMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C327BE9134B656E0024AE77 /* MicrocommandsMemory.cpp */; };
 		3C75B39D1338DB93008CEB3F /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C75B39B1338DB93008CEB3F /* off.png */; };
 		3C75B39E1338DB93008CEB3F /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C75B39C1338DB93008CEB3F /* on.png */; };
+		3CA3E962134C5B9A00C01DED /* LoadSaveVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3E960134C5B9A00C01DED /* LoadSaveVC.mm */; };
+		3CA3E963134C5B9A00C01DED /* LoadSaveVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA3E961134C5B9A00C01DED /* LoadSaveVC.xib */; };
 		3CFADD1F134B2ABF00ED3B51 /* Multiplexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CFADD1E134B2ABF00ED3B51 /* Multiplexer.cpp */; };
 		3CFFE34D1339FD7100AD09AA /* Register.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE34C1339FD7100AD09AA /* Register.cpp */; };
 		3CFFE35A133A057C00AD09AA /* Tetrad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CFFE359133A057C00AD09AA /* Tetrad.cpp */; };
@@ -45,6 +47,10 @@
 		3C327BE9134B656E0024AE77 /* MicrocommandsMemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MicrocommandsMemory.cpp; sourceTree = "<group>"; };
 		3C75B39B1338DB93008CEB3F /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
 		3C75B39C1338DB93008CEB3F /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
+		3CA3E95F134C5B9A00C01DED /* LoadSaveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadSaveVC.h; sourceTree = "<group>"; };
+		3CA3E960134C5B9A00C01DED /* LoadSaveVC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LoadSaveVC.mm; sourceTree = "<group>"; };
+		3CA3E961134C5B9A00C01DED /* LoadSaveVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoadSaveVC.xib; path = Classes/LoadSaveVC.xib; sourceTree = "<group>"; };
+		3CEAA593134C421C000138DE /* classes.xcclassmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcclassmodel; path = classes.xcclassmodel; sourceTree = "<group>"; };
 		3CFADD1D134B2ABF00ED3B51 /* Multiplexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Multiplexer.h; sourceTree = "<group>"; };
 		3CFADD1E134B2ABF00ED3B51 /* Multiplexer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Multiplexer.cpp; sourceTree = "<group>"; };
 		3CFFE34B1339FD7100AD09AA /* Register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Register.h; sourceTree = "<group>"; };
@@ -79,6 +85,8 @@
 				3C327B10134B4BF70024AE77 /* MemoryState.mm */,
 				3C327BE8134B656E0024AE77 /* MicrocommandsMemory.h */,
 				3C327BE9134B656E0024AE77 /* MicrocommandsMemory.cpp */,
+				3CA3E95F134C5B9A00C01DED /* LoadSaveVC.h */,
+				3CA3E960134C5B9A00C01DED /* LoadSaveVC.mm */,
 				3CFFE34B1339FD7100AD09AA /* Register.h */,
 				3CFFE34C1339FD7100AD09AA /* Register.cpp */,
 				3CFFE358133A057C00AD09AA /* Tetrad.h */,
@@ -125,6 +133,8 @@
 				2899E5210DE3E06400AC0155 /* mt1804ViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				3C327B11134B4BF70024AE77 /* MemoryState.xib */,
+				3CA3E961134C5B9A00C01DED /* LoadSaveVC.xib */,
+				3CEAA593134C421C000138DE /* classes.xcclassmodel */,
 				8D1107310486CEB800E47090 /* mt1804-Info.plist */,
 			);
 			name = Resources;
@@ -203,6 +213,7 @@
 				3C75B39D1338DB93008CEB3F /* off.png in Resources */,
 				3C75B39E1338DB93008CEB3F /* on.png in Resources */,
 				3C327B13134B4BF70024AE77 /* MemoryState.xib in Resources */,
+				3CA3E963134C5B9A00C01DED /* LoadSaveVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +232,7 @@
 				3CFADD1F134B2ABF00ED3B51 /* Multiplexer.cpp in Sources */,
 				3C327B12134B4BF70024AE77 /* MemoryState.mm in Sources */,
 				3C327BEA134B656E0024AE77 /* MicrocommandsMemory.cpp in Sources */,
+				3CA3E962134C5B9A00C01DED /* LoadSaveVC.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +250,10 @@
 				GCC_PREFIX_HEADER = mt1804_Prefix.pch;
 				GCC_VERSION = 4.2;
 				INFOPLIST_FILE = "mt1804-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes\"",
+				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = mt1804;
 			};
@@ -251,6 +267,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = mt1804_Prefix.pch;
 				INFOPLIST_FILE = "mt1804-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Classes\"",
+				);
 				PRODUCT_NAME = mt1804;
 				VALIDATE_PRODUCT = YES;
 			};

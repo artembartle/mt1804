@@ -8,6 +8,7 @@
 
 #import "mt1804ViewController.h"
 #import "MemoryState.h"
+#import "LoadSaveVC.h"
 #include "MicrocommandsMemory.h"
 
 @implementation mt1804ViewController
@@ -85,6 +86,13 @@
 	MemoryState *memState = [[MemoryState alloc] init];
 	[self presentModalViewController:memState animated:YES];
 	[memState release];
+}
+
+-(IBAction)viewLoadSave
+{
+	LoadSaveVC *loadSave = [[LoadSaveVC alloc] init];
+	[self presentModalViewController:loadSave animated:YES];
+	[loadSave release];
 }
 
 #pragma mark -
