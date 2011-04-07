@@ -14,7 +14,7 @@ class Tetrad
 public:
 	Tetrad();
 	~Tetrad();
-	Tetrad(const Tetrad& tetr);
+	Tetrad& operator=(const Tetrad& other);
 	void setBool(int n, bool value);
 	int getNumber();
 };

@@ -10,6 +10,7 @@
 #import "MemoryState.h"
 #import "LoadSaveVC.h"
 #include "MicrocommandsMemory.h"
+#include "CommandAnalizer.h"
 
 @implementation mt1804ViewController
 
@@ -114,12 +115,13 @@
 */
 
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	analizer = new CommandAnalizer();
     [super viewDidLoad];
 }
-*/
+
 
 
 
@@ -144,6 +146,7 @@
 
 
 - (void)dealloc {
+	delete analizer;
     [super dealloc];
 }
 

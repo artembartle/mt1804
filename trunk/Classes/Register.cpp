@@ -17,12 +17,14 @@ Register::~Register()
 {
 }
 
-Register::Register(const Register& reg)
+
+Register& Register::operator=(const Register& reg)
 {
 	for (int i = 0; i < 8; i++)
 		(*this).content[i] = reg.content[i];
 	
 	(*this).currentTetrad = reg.currentTetrad;
+	return *this;
 }
 
 void Register::loadToRegister(int tetradNum, int number)

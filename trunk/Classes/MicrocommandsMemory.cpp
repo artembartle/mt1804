@@ -8,6 +8,7 @@
  */
 
 #include "MicrocommandsMemory.h"
+#include "CommandAnalizer.h"
 
 MicrocommandsMemory pmk;
 
@@ -24,6 +25,7 @@ MicrocommandsMemory::~MicrocommandsMemory()
 void MicrocommandsMemory::loadMicroCommandToAddress(const Register& microCmd, int address)
 {
 	microCommands[address] = microCmd;
+	analizer->loadMicroCommand(&microCommands[address]);
 }
 
 int MicrocommandsMemory::getDataFromTetradAtRegister(int numRegister, int numTetrad)

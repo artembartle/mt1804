@@ -16,10 +16,11 @@ Tetrad::~Tetrad()
 {
 }
 
-Tetrad::Tetrad(const Tetrad& tetr)
+Tetrad& Tetrad::operator=(const Tetrad& other)
 {
 	for (int i = 0; i < 4; i++)
-		(*this).setBool(i, tetr.t[i]);
+		(*this).setBool(i, other.t[i]);
+	return *this;
 }
 
 void Tetrad::setBool(int n, bool value)
