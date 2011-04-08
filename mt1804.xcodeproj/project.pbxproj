@@ -48,6 +48,7 @@
 		3C327B11134B4BF70024AE77 /* MemoryState.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MemoryState.xib; path = Classes/MemoryState.xib; sourceTree = "<group>"; };
 		3C327BE8134B656E0024AE77 /* MicrocommandsMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MicrocommandsMemory.h; sourceTree = "<group>"; };
 		3C327BE9134B656E0024AE77 /* MicrocommandsMemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MicrocommandsMemory.cpp; sourceTree = "<group>"; };
+		3C4442EE134F512700B712A0 /* formats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = formats.h; sourceTree = "<group>"; };
 		3C75B39B1338DB93008CEB3F /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = off.png; sourceTree = "<group>"; };
 		3C75B39C1338DB93008CEB3F /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = on.png; sourceTree = "<group>"; };
 		3CA3E95F134C5B9A00C01DED /* LoadSaveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadSaveVC.h; sourceTree = "<group>"; };
@@ -90,6 +91,7 @@
 				3C327BE9134B656E0024AE77 /* MicrocommandsMemory.cpp */,
 				3C056131134E0F570047D9DE /* CommandAnalizer.h */,
 				3C056132134E0F570047D9DE /* CommandAnalizer.cpp */,
+				3C4442EE134F512700B712A0 /* formats.h */,
 				3CA3E95F134C5B9A00C01DED /* LoadSaveVC.h */,
 				3CA3E960134C5B9A00C01DED /* LoadSaveVC.mm */,
 				3CFFE34B1339FD7100AD09AA /* Register.h */,

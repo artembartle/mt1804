@@ -35,6 +35,7 @@
 -(IBAction)load;
 -(IBAction)viewMemoryState;
 -(IBAction)viewLoadSave;
+-(IBAction)onStart;
 -(void)changeMemoryState:(int)number;
 -(void)changeMicroCommandState:(int)number;
 @end
