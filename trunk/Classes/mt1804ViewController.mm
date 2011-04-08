@@ -58,6 +58,11 @@
 	[self changeMemoryState:pmk.getDataFromTetradAtRegister(address.getNumber(), mux.getNumber())];
 }
 
+-(IBAction)onStart
+{
+	analizer->run();
+}
+
 -(void)changeMemoryState:(int)number
 {
 	VD5.highlighted = number % 2;

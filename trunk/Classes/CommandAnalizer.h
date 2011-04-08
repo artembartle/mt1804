@@ -10,28 +10,46 @@
 #define COMMANDANALIZER_H
 
 #include "Register.h"
-#include <queue>
+#include "formats.h"
 
 using namespace std;
 
 class CommandAnalizer
 {
-	int d;
-	int b;
-	int a;
+	int F,Y;
+	int Q;
+	int R,S,C0;
+	int S0,S1;
+	bool Z, F3, OVR, C4;
+	
+	int D;
+	int B;
+	int A;
 	int funcALU;
 	int source;
 	int reciever;
 	int nextAddr;
 	int jmpAddr;
 	
-	std::queue<Register*>* commands;
+	int SA11_SA8;
+	
+	int commandIndex;
+	
+	Register* currCommand;
+	
+	void fillIn(Register* command);
+	void getOperandsSource();
+	void getResultReciever();
+	void getNextAddress();
+	int performOperation();
+	void performMicroCommand(Register* microCommand);
+	void nextCommand();
+	void jumpToCommand(int commandNum);
+	
 public:
 	CommandAnalizer();
 	~CommandAnalizer();
-	void loadMicroCommand(Register* microCommand);
 	void run();
-	void fillIn(Register* command);
 };
 
 extern CommandAnalizer* analizer;

@@ -12,8 +12,11 @@
 
 #include "Register.h"
 
+class CommandAnalizer;
+
 class MicrocommandsMemory
 {
+	friend class CommandAnalizer;
 	Register microCommands[16];
 public:
 	MicrocommandsMemory();
