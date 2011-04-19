@@ -42,3 +42,10 @@ int Register::getFromTetrad(int tetradNum)
 {
 	return content[tetradNum].getNumber();
 }
+
+void Register::cleanRegister()
+{
+	for (int i = 0; i < 8; i++)
+		loadToRegister(i, 0);
+	
+}

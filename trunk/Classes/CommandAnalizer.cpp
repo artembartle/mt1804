@@ -9,12 +9,14 @@
 
 #include "CommandAnalizer.h"
 #include "MicrocommandsMemory.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 CommandAnalizer* analizer;
 
 CommandAnalizer::CommandAnalizer()
 {
-	
+	RON = (int*)calloc(8, sizeof(int));
 }
 
 CommandAnalizer::~CommandAnalizer()
@@ -36,17 +38,21 @@ void CommandAnalizer::performMicroCommand(Register* microCommand)
 
 void CommandAnalizer::run()
 {
+	commandIndex = 0;
+	printRON();
 	performMicroCommand(&pmk.microCommands[0]);
 }
 
 void CommandAnalizer::nextCommand()
 {
+	printRON();
 	commandIndex++;
 	performMicroCommand(&pmk.microCommands[commandIndex]);
 }
 
 void CommandAnalizer::jumpToCommand(int commandNum)
 {
+	printRON();
 	performMicroCommand(&pmk.microCommands[commandNum]);
 }
 
@@ -60,13 +66,14 @@ void CommandAnalizer::fillIn(Register* command)
 	reciever = command->getFromTetrad(5);
 	nextAddr = command->getFromTetrad(6);
 	jmpAddr = command->getFromTetrad(7);
+	printf("Microcommand#%d: %d %d %d %d %d %d %d %d\n", commandIndex, D,B,A,funcALU, source, reciever, nextAddr, jmpAddr);
 }
 
 int CommandAnalizer::performOperation()
 {
 	C0 = funcALU / 8;
 	
-	switch (funcALU % 4) 
+	switch (funcALU % 8) 
 	{
 		case RplusS:
 			return R+S+C0;
@@ -95,25 +102,25 @@ void CommandAnalizer::getOperandsSource()
 {
 	S0 = source / 8;
 	
-	switch (source % 4) 
+	switch (source % 8) 
 	{
 		case AQ:
-		{ R = A; S = Q; }
+		{ R = RON[A]; S = Q; }
 			break;
 		case AB:
-		{ R = A; S = B; }
+		{ R = RON[A]; S = RON[B]; }
 			break;
 		case _0Q:
 		{ R = 0; S = Q; }
 			break;
 		case _0B:
-		{ R = 0; S = B; }
+		{ R = 0; S = RON[B]; }
 			break;
 		case _0A:
-		{ R = 0; S = A; }
+		{ R = 0; S = RON[A]; }
 			break;
 		case DA:
-		{ R = D; S = A; }
+		{ R = D; S = RON[A]; }
 			break;
 		case DQ:
 		{ R = D; S = Q; }
@@ -131,7 +138,7 @@ void CommandAnalizer::getResultReciever()
 {
 	S1 = reciever / 8;
 	
-	switch (reciever % 4) 
+	switch (reciever % 8) 
 	{
 		case FtoQ:
 		{ Q = F; Y = F; }
@@ -140,22 +147,22 @@ void CommandAnalizer::getResultReciever()
 		{ Y = F; }
 			break;
 		case FtoBA:
-		{ B = F; Y = A; }
+		{ RON[B] = F; Y = A; }
 			break;
 		case FtoBF:
-		{ B = F; Y = F; }
+		{ RON[B] = F; Y = F; }
 			break;
 		case FQd2toBQ:
-		{ B = F / 2; Q = Q / 2; Y = F; }
+		{ RON[B] = F / 2; Q = Q / 2; Y = F; }
 			break;
 		case Fd2toB:
-		{ B = F / 2; Y = F; }
+		{ RON[B] = F / 2; Y = F; }
 			break;
 		case FQmul2toBQ:
-		{ B = F * 2; Q = Q * 2; Y = F; }
+		{ RON[B] = F * 2; Q = Q * 2; Y = F; }
 			break;
 		case Fmul2toB:
-		{ B = F * 2; Y = F; }
+		{ RON[B] = F * 2; Y = F; }
 			break;
 		default:
 			break;
@@ -225,4 +232,12 @@ void CommandAnalizer::getNextAddress()
 		default:
 			break;
 	}
+}
+
+void CommandAnalizer::printRON()
+{
+	printf("%d) ", commandIndex);
+	for (int i = 0; i < 8; i++)
+		printf("%d ", RON[i]);
+	printf("\n");
 }

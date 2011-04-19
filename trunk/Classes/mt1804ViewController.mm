@@ -48,6 +48,7 @@
 	addressBtn = sender;
 	[self changeBtnState:addressBtn];
 	address.setBool(addressBtn.tag, addressBtn.selected);
+	microCommand.cleanRegister();
 	[self changeMemoryState:pmk.getDataFromTetradAtRegister(address.getNumber(), mux.getNumber())];
 }
 

@@ -18,6 +18,7 @@ public:
 	~Register();
 	Register& operator=(const Register& reg);
 	void loadToRegister(int tetradNum, int number);
+	void cleanRegister();
 	int getFromTetrad(int tetradNum);
 };
 
