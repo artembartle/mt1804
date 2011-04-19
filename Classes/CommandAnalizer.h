@@ -12,8 +12,6 @@
 #include "Register.h"
 #include "formats.h"
 
-using namespace std;
-
 class CommandAnalizer
 {
 	int F,Y;
@@ -21,6 +19,8 @@ class CommandAnalizer
 	int R,S,C0;
 	int S0,S1;
 	bool Z, F3, OVR, C4;
+	
+	int* RON;
 	
 	int D;
 	int B;
@@ -45,7 +45,7 @@ class CommandAnalizer
 	void performMicroCommand(Register* microCommand);
 	void nextCommand();
 	void jumpToCommand(int commandNum);
-	
+	void printRON();
 public:
 	CommandAnalizer();
 	~CommandAnalizer();
