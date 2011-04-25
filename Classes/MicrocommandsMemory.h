@@ -17,7 +17,7 @@ class CommandAnalizer;
 class MicrocommandsMemory
 {
 	friend class CommandAnalizer;
-	Register microCommands[16];
+	Register* microCommands;
 public:
 	MicrocommandsMemory();
 	~MicrocommandsMemory();

@@ -17,6 +17,8 @@
 	Tetrad data;
 	Tetrad address;
 	
+	BOOL isWork;
+	
 	IBOutlet UIImageView *VD1;
 	IBOutlet UIImageView *VD2;
 	IBOutlet UIImageView *VD3;
@@ -26,6 +28,11 @@
 	IBOutlet UIImageView *VD6;
 	IBOutlet UIImageView *VD7;
 	IBOutlet UIImageView *VD8;
+	
+	IBOutlet UIImageView *VD9;
+	IBOutlet UIImageView *VD10;
+	IBOutlet UIImageView *VD11;
+	IBOutlet UIImageView *VD12;
 }
 
 -(void)changeBtnState:(UIButton*)button;
@@ -36,7 +43,10 @@
 -(IBAction)viewMemoryState;
 -(IBAction)viewLoadSave;
 -(IBAction)onStart;
+-(IBAction)onStep;
+-(IBAction)onWorkLoad:(id)sender;
 -(void)changeMemoryState:(int)number;
 -(void)changeMicroCommandState:(int)number;
+-(void)changeDataState:(int)number;
 @end
 

@@ -15,7 +15,7 @@
 		2899E5220DE3E06400AC0155 /* mt1804ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* mt1804ViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* mt1804ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* mt1804ViewController.mm */; };
-		3C056133134E0F570047D9DE /* CommandAnalizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C056132134E0F570047D9DE /* CommandAnalizer.cpp */; };
+		3C056133134E0F570047D9DE /* CommandAnalizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C056132134E0F570047D9DE /* CommandAnalizer.mm */; };
 		3C327B12134B4BF70024AE77 /* MemoryState.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C327B10134B4BF70024AE77 /* MemoryState.mm */; };
 		3C327B13134B4BF70024AE77 /* MemoryState.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C327B11134B4BF70024AE77 /* MemoryState.xib */; };
 		3C327BEA134B656E0024AE77 /* MicrocommandsMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C327BE9134B656E0024AE77 /* MicrocommandsMemory.cpp */; };
@@ -42,7 +42,7 @@
 		29B97316FDCFA39411CA2CEA /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* mt1804_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mt1804_Prefix.pch; sourceTree = "<group>"; };
 		3C056131134E0F570047D9DE /* CommandAnalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandAnalizer.h; sourceTree = "<group>"; };
-		3C056132134E0F570047D9DE /* CommandAnalizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CommandAnalizer.cpp; sourceTree = "<group>"; };
+		3C056132134E0F570047D9DE /* CommandAnalizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CommandAnalizer.mm; sourceTree = "<group>"; };
 		3C327B0F134B4BF70024AE77 /* MemoryState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryState.h; sourceTree = "<group>"; };
 		3C327B10134B4BF70024AE77 /* MemoryState.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MemoryState.mm; sourceTree = "<group>"; };
 		3C327B11134B4BF70024AE77 /* MemoryState.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MemoryState.xib; path = Classes/MemoryState.xib; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 				3C327BE8134B656E0024AE77 /* MicrocommandsMemory.h */,
 				3C327BE9134B656E0024AE77 /* MicrocommandsMemory.cpp */,
 				3C056131134E0F570047D9DE /* CommandAnalizer.h */,
-				3C056132134E0F570047D9DE /* CommandAnalizer.cpp */,
+				3C056132134E0F570047D9DE /* CommandAnalizer.mm */,
 				3C4442EE134F512700B712A0 /* formats.h */,
 				3CA3E95F134C5B9A00C01DED /* LoadSaveVC.h */,
 				3CA3E960134C5B9A00C01DED /* LoadSaveVC.mm */,
@@ -240,7 +240,7 @@
 				3C327B12134B4BF70024AE77 /* MemoryState.mm in Sources */,
 				3C327BEA134B656E0024AE77 /* MicrocommandsMemory.cpp in Sources */,
 				3CA3E962134C5B9A00C01DED /* LoadSaveVC.mm in Sources */,
-				3C056133134E0F570047D9DE /* CommandAnalizer.cpp in Sources */,
+				3C056133134E0F570047D9DE /* CommandAnalizer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
