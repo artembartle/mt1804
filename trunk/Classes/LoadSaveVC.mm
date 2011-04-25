@@ -8,6 +8,7 @@
 
 #import "LoadSaveVC.h"
 #include "MicrocommandsMemory.h"
+#include "CommandAnalizer.h"
 
 @implementation LoadSaveVC
 
@@ -26,8 +27,9 @@
 
 -(void)saveMemoryArea
 {
-	NSMutableArray *memory = [[NSMutableArray alloc] initWithCapacity:16];
-	for (int i = 0; i < 16; i++) 
+	int count = analizer->getCommandsCount();
+	NSMutableArray *memory = [[NSMutableArray alloc] initWithCapacity:count];
+	for (int i = 0; i < count; i++) 
 	{
 		NSMutableArray *command = [[NSMutableArray alloc] initWithCapacity:8];
 		for (int j = 0; j < 8; j++) 
@@ -53,7 +55,8 @@
 	NSMutableArray *memory = [[NSMutableArray alloc] initWithContentsOfFile:path];
 	if (memory) 
 	{
-		for (int i = 0; i < 16; i++)
+		int count = [memory count];
+		for (int i = 0; i < count; i++)
 		{
 			NSMutableArray *command = [NSMutableArray arrayWithArray:[memory objectAtIndex:i]];
 			Register regCommand;
@@ -61,6 +64,7 @@
 				regCommand.loadToRegister(j, [[command objectAtIndex:j] intValue]);
 			pmk.loadMicroCommandToAddress(regCommand, i);
 		}
+		analizer->setCommandsCount(count);
 	}
 	[memory release];
 }

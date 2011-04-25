@@ -9,17 +9,18 @@
 
 #include "MicrocommandsMemory.h"
 #include "CommandAnalizer.h"
+#include <stdlib.h>
 
 MicrocommandsMemory pmk;
 
 MicrocommandsMemory::MicrocommandsMemory()
 {
-	
+	microCommands = (Register*)calloc(16, sizeof(Register));
 }
 
 MicrocommandsMemory::~MicrocommandsMemory()
 {
-	
+	free(microCommands);
 }
 
 void MicrocommandsMemory::loadMicroCommandToAddress(const Register& microCmd, int address)

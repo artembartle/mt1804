@@ -11,6 +11,7 @@
 
 #include "Register.h"
 #include "formats.h"
+#include <objc/objc.h>
 
 class CommandAnalizer
 {
@@ -30,12 +31,15 @@ class CommandAnalizer
 	int reciever;
 	int nextAddr;
 	int jmpAddr;
-	
 	int SA11_SA8;
-	
 	int commandIndex;
 	
+	int commandsCount;
+	
 	Register* currCommand;
+	id viewController;
+	
+	bool step;
 	
 	void fillIn(Register* command);
 	void getOperandsSource();
@@ -50,6 +54,10 @@ public:
 	CommandAnalizer();
 	~CommandAnalizer();
 	void run();
+	void setVC(id VC);
+	void increaseCommandsCount(int n);
+	int getCommandsCount();
+	void setCommandsCount(int n);
 };
 
 extern CommandAnalizer* analizer;

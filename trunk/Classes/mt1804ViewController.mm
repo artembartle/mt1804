@@ -50,6 +50,7 @@
 	address.setBool(addressBtn.tag, addressBtn.selected);
 	microCommand.cleanRegister();
 	[self changeMemoryState:pmk.getDataFromTetradAtRegister(address.getNumber(), mux.getNumber())];
+	analizer->setCommandsCount(address.getNumber());
 }
 
 -(IBAction)load
@@ -61,7 +62,22 @@
 
 -(IBAction)onStart
 {
-	analizer->run();
+	if (isWork) 
+	{
+		analizer->setVC(self);
+		analizer->run();
+	}
+}
+
+-(IBAction)onWorkLoad:(id)sender
+{
+	isWork = not (isWork);
+	[self changeBtnState:(UIButton*)sender];
+}
+
+-(IBAction)onStep
+{
+	//analizer->performOperation();
 }
 
 -(void)changeMemoryState:(int)number
@@ -73,7 +89,6 @@
 	VD7.highlighted = number % 2;
 	number /= 2;
 	VD8.highlighted = number % 2;
-	number /= 2;
 }
 
 -(void)changeMicroCommandState:(int)number
@@ -85,7 +100,19 @@
 	VD3.highlighted = number % 2;
 	number /= 2;
 	VD4.highlighted = number % 2;
-	number /= 2;	
+}
+
+
+-(void)changeDataState:(int)number
+{
+	
+	VD9.highlighted = number % 2;
+	number /= 2;
+	VD10.highlighted = number % 2;
+	number /= 2;
+	VD11.highlighted = number % 2;
+	number /= 2;
+	VD12.highlighted = number % 2;
 }
 
 -(IBAction)viewMemoryState
